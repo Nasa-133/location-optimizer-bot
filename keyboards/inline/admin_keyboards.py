@@ -12,12 +12,7 @@ from data.texts import (
 
 
 def get_admin_main_keyboard() -> InlineKeyboardMarkup:
-    """
-    Admin asosiy paneli klaviaturasi
 
-    Returns:
-        InlineKeyboardMarkup
-    """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [
             InlineKeyboardButton(text=BTN_ADMIN_USERS, callback_data="admin_users")
@@ -33,12 +28,7 @@ def get_admin_main_keyboard() -> InlineKeyboardMarkup:
 
 
 def get_admin_back_keyboard() -> InlineKeyboardMarkup:
-    """
-    Admin panelga qaytish klaviaturasi
 
-    Returns:
-        InlineKeyboardMarkup
-    """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [
             InlineKeyboardButton(text=BTN_ADMIN_BACK, callback_data="admin_back")
@@ -69,12 +59,7 @@ def get_admin_users_keyboard() -> InlineKeyboardMarkup:
 
 
 def get_broadcast_confirm_keyboard() -> InlineKeyboardMarkup:
-    """
-    Broadcast tasdiqlaash klaviaturasi
 
-    Returns:
-        InlineKeyboardMarkup
-    """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [
             InlineKeyboardButton(text="✅ Yuborish", callback_data="broadcast_confirm"),

@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Bot matnlari fayli
-Barcha xabarlar va matnlar
-"""
-
-# Asosiy xabarlar
 START_MESSAGE = """
 🎯 Assalomu alaykum! Marshrut optimallashtirish botiga xush kelibsiz!
 
@@ -20,7 +14,6 @@ LOCATION_REQUEST = """
 • Yoki manzilni matn ko'rinishida yozing
 """
 
-# Manzil tasdiqlash
 CONFIRM_ADDRESS = "📍 Siz yuborgan lokatsiya: {address}\n❓ Ushbu manzilni tasdiqlaysizmi?"
 
 # Keyingi manzil so'rash

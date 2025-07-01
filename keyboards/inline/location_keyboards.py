@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Lokatsiya bilan bog'liq inline klaviaturalar
-"""
+
 
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from data.texts import (
@@ -12,12 +10,7 @@ from data.texts import (
 
 
 def get_confirm_address_keyboard() -> InlineKeyboardMarkup:
-    """
-    Manzilni tasdiqlash uchun klaviatura
 
-    Returns:
-        InlineKeyboardMarkup
-    """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [
             InlineKeyboardButton(text=BTN_YES, callback_data="confirm_address_yes"),
@@ -28,12 +21,7 @@ def get_confirm_address_keyboard() -> InlineKeyboardMarkup:
 
 
 def get_add_more_address_keyboard() -> InlineKeyboardMarkup:
-    """
-    Yana manzil qo'shish uchun klaviatura
 
-    Returns:
-        InlineKeyboardMarkup
-    """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [
             InlineKeyboardButton(text=BTN_ADD_MORE, callback_data="add_more_yes"),
@@ -44,12 +32,7 @@ def get_add_more_address_keyboard() -> InlineKeyboardMarkup:
 
 
 def get_final_choice_keyboard() -> InlineKeyboardMarkup:
-    """
-    Oxirgi tanlov uchun klaviatura
 
-    Returns:
-        InlineKeyboardMarkup
-    """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [
             InlineKeyboardButton(text=BTN_RETURN_HERE, callback_data="final_return_here")
@@ -62,12 +45,7 @@ def get_final_choice_keyboard() -> InlineKeyboardMarkup:
 
 
 def get_location_request_keyboard() -> InlineKeyboardMarkup:
-    """
-    Lokatsiya so'rash uchun klaviatura
 
-    Returns:
-        InlineKeyboardMarkup
-    """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [
             InlineKeyboardButton(text="📍 Lokatsiya yuborish", callback_data="request_location")

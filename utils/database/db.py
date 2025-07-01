@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Ma'lumotlar bazasi (RAM dict)
-Barcha ma'lumotlar RAM'da saqlanadi
-"""
 
 import logging
 from typing import Dict, List, Optional
@@ -11,7 +7,6 @@ import json
 
 logger = logging.getLogger(__name__)
 
-# RAM'dagi ma'lumotlar bazasi
 DATABASE = {
     'users': {},  # user_id: user_data
     'user_sessions': {},  # user_id: session_data
@@ -42,9 +37,7 @@ def add_user(user_id: int, username: str = None, first_name: str = None):
 
 
 def get_user(user_id: int) -> Optional[Dict]:
-    """
-    Foydalanuvchi ma'lumotlarini olish
-    """
+
     return DATABASE['users'].get(user_id)
 
 
